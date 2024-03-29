@@ -2909,8 +2909,8 @@ body {
 }
 .container-big {
   max-width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
 }
 .filter-brand__input,
 .filter-category__input {
@@ -3269,7 +3269,7 @@ template {
   cursor: pointer;
   position: relative;
   font-size: 15px;
-  color: #fff;
+  color: #fffacd;
   background-color: #4871a1;
   padding: 24px 100px 20px 20px;
   font-family: "Rubik", sans-serif;
@@ -3407,7 +3407,7 @@ template {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 .products-item i {
@@ -4703,7 +4703,7 @@ template {
 .about-us__advance {
   margin-bottom: 2rem;
   background-color: #4871a1;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 .about-us__advance-inner {
   display: -webkit-box;
@@ -4712,21 +4712,9 @@ template {
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
-.about-us__advance-item {
-  text-align: center;
-}
-.about-us__advance-img {
-  margin-bottom: 15px;
-}
-.about-us__advance-num {
-  font-weight: 700;
-  font-size: 36px;
-  margin-bottom: 15px;
-  color: #436372;
-}
-.about-us__advance-name {
-  font-size: 18px;
-  font-weight: 700;
+.about-us__advance-inner .title {
+  justify-content: center;
+  align-items: center;
 }
 .about-team__inner {
   display: -webkit-box;
@@ -5044,22 +5032,24 @@ template {
 .settings-btn span {
   display: block;
   width: 100%;
-  margin: 5px 0;
+  margin: 5px -10px;
   height: 3px;
-  background-color: #436372;
+  background-color: #fffacd;
 }
 @media (max-width: 1200px) {
   .settings-btn {
     display: block;
   }
   .menu__list {
+    height: 100%;
     z-index: 2;
-    display: none;
+    display: flex;
+    flex-direction: column;
     top: 100px;
     position: absolute;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: left;
     background-color: #436372;
   }
   .menu__item {

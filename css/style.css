@@ -45,3 +45,63 @@ h1 {
   color: #fffacd;
   margin-right: 50px;
 }
+
+@media (max-width: 767px) {
+  .logo__img {
+    width: 80px;
+    height: 80px;
+    margin: 1rem;
+  }
+
+  .top-slider {
+    margin-bottom: 5rem;
+  }
+
+  .top-slider__title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .top-slider__btn {
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 25px;
+    font-family: 500;
+    margin-left: 80px;
+    background-image: none;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .about-us {
+    padding-top: 20px;
+  }
+
+  .menu__list {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    position: absolute;
+    left: 0;
+    background-color: #4871a1;
+    font-weight: 900;
+    bottom: -25;
+  }
+
+  #header .menu a {
+    float: left;
+    margin-left: 20px;
+  }
+
+  .products {
+    padding: 50px;
+  }
+
+  .products-items {
+    width: 100%;
+    background-color: #fff;
+  }
+}
