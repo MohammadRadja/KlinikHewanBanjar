@@ -2905,9 +2905,10 @@ body {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  border: 1px solid;
 }
 .container-big {
-  max-width: 1800px;
+  max-width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -3080,6 +3081,7 @@ template {
   font-size: 36px;
   text-align: center;
   margin-bottom: 35px;
+  color: #fffacd;
 }
 .pagination {
   margin-top: 100px;
@@ -3268,7 +3270,7 @@ template {
   position: relative;
   font-size: 15px;
   color: #fff;
-  background-color: #a3bbc8;
+  background-color: #4871a1;
   padding: 24px 100px 20px 20px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -3386,10 +3388,11 @@ template {
   position: relative;
   margin-bottom: 30px;
   text-align: center;
-  -webkit-box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  background-color: #aaafc5;
+  -webkit-box-shadow: 0px 6px 47px 3px rgba(170, 175, 197, 0.05);
+  box-shadow: 0px 6px 47px 3px rgba(170, 175, 197, 0.05);
   width: 270px;
-  height: 380px;
+  height: 200px;
   padding: 50px 0 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3404,13 +3407,23 @@ template {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  border-radius: 20px;
 }
+
+.products-item i {
+  color: #fff;
+  font-size: 60px;
+}
+
 .products-item__name {
   margin-bottom: 15px;
   color: #243f4d;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Font Awesome 5 Free"; /* Font family Font Awesome */
 }
 .products-item__price {
-  color: #a3bbc8;
+  color: #fff;
   font-weight: 700;
 }
 .products-item__links {
@@ -3421,7 +3434,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: 133px;
+  bottom: 0;
   -webkit-transform: translateY(400%);
   -ms-transform: translateY(400%);
   transform: translateY(400%);
@@ -3466,18 +3479,16 @@ template {
   display: none;
 }
 .products-item.product-item--list {
-  text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 500px;
+  height: 300px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: start;
   width: 100%;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -3506,13 +3517,14 @@ template {
   margin-bottom: 30px;
 }
 .products-item.product-item--list .products-item__btn {
-  display: block;
+  display: flex;
   width: 200px;
   border: none;
   color: #fff;
   height: 50px;
   border-radius: 5px;
-  background-color: #a3bbc8;
+  background-color: #000;
+  justify-content: center;
 }
 .products-item.product-item--list .products-item__links {
   display: none;
@@ -3634,7 +3646,8 @@ template {
 }
 .insights {
   height: 440px;
-  padding-top: 110px;
+  padding-top: 10px;
+  margin-bottom: 100px;
 }
 .insights__box {
   display: -webkit-box;
@@ -3735,37 +3748,64 @@ template {
   -ms-flex-pack: justify;
   justify-content: space-between;
   border-bottom: 1px solid #dae4e9;
+  margin-top: -100px;
 }
+
+.footer-contacts img {
+  width: 150px;
+  height: auto;
+  position: relative;
+}
+
 .footer-contacts {
   max-width: 200px;
-  font-size: 14px;
+  font-size: 16px;
   color: #a3a3a3;
 }
 .footer__title {
   font-weight: 700;
   text-transform: uppercase;
   color: #243f4d;
-  margin-bottom: 20px;
+  margin: 5px 0;
 }
 .footer__logo {
-  margin-bottom: 25px;
+  margin: 5px 0;
 }
 .footer__adress {
-  margin-bottom: 20px;
+  margin: 5px 0;
 }
 .footer__phone {
-  margin-bottom: 20px;
+  margin: 5px 0;
 }
 .footer-services {
+  display: flex;
+  position: relative;
+  flex-direction: column;
   max-width: 150px;
+  margin: 50px 0;
 }
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+
 .footer-account {
+  display: flex;
+  position: relative;
+  flex-direction: column;
   max-width: 150px;
+  margin: 50px 0;
 }
 .footer__item {
   color: #a3a3a3;
   font-size: 14px;
   line-height: 32px;
+  white-space: nowrap;
 }
 .footer__text {
   color: #a3a3a3;
@@ -3822,17 +3862,10 @@ template {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-.footer-bottom__link {
+  justify-content: center;
+  color: #000;
   font-size: 14px;
-  color: #a3a3a3;
-  padding: 0 15px;
-}
-.footer-bottom__link + .footer-bottom__link {
-  border-left: 1px solid #a3a3a3;
-}
-.footer-bottom__link:last-child {
-  padding-right: 0;
+  font-style: italic;
 }
 .top {
   padding: 30px 0;
@@ -3950,7 +3983,7 @@ template {
   color: #243f4d;
 }
 .contact {
-  padding-top: 120px;
+  padding-top: 2rem;
   text-align: center;
 }
 .contact__subtitle {
@@ -3985,6 +4018,7 @@ template {
   justify-content: space-between;
 }
 .contact-item {
+  width: 100%;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -3993,11 +4027,10 @@ template {
   padding: 70px 50px;
   border: 1px solid transparent;
 }
-.contact-item__img {
+.contact-item i {
   background-color: #fff;
   display: inline-block;
-  height: 80px;
-  width: 80px;
+  font-size: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4010,6 +4043,7 @@ template {
   margin: 0 auto;
   border-radius: 20px;
   margin-bottom: 55px;
+  color: #4871a1;
 }
 .contact-item__title {
   font-size: 20px;
@@ -4102,7 +4136,7 @@ template {
   border-radius: 10px;
 }
 .goods {
-  padding-top: 120px;
+  padding-top: 10px;
 }
 .goods-aside {
   width: 270px;
@@ -4114,7 +4148,7 @@ template {
   display: flex;
 }
 .goods__content {
-  max-width: 870px;
+  max-width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4123,6 +4157,7 @@ template {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-left: 200px;
 }
 .filter__item {
   margin-bottom: 40px;
@@ -4581,7 +4616,7 @@ template {
   height: 50px;
 }
 .about-us {
-  padding-top: 120px;
+  padding-top: 10px;
 }
 .about-us__box {
   display: -webkit-box;
@@ -4620,15 +4655,16 @@ template {
   line-height: 30px;
 }
 .about-us__box-title {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 900;
   color: #000;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 .about-us__box-text {
   line-height: 30px;
-  padding-bottom: 60px;
-  border-bottom: 1px solid #e6eaf0;
+  padding-bottom: 5rem;
+  font-size: 20px;
+  font-weight: 500;
 }
 .about-stat {
   padding-top: 25px;
@@ -4665,9 +4701,9 @@ template {
   padding-left: 25px;
 }
 .about-us__advance {
-  margin-bottom: 120px;
-  background-color: #fcd7b6;
-  padding: 80px 0;
+  margin-bottom: 2rem;
+  background-color: #4871a1;
+  padding: 60px 0;
 }
 .about-us__advance-inner {
   display: -webkit-box;

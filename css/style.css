@@ -13,12 +13,14 @@ body {
 }
 
 .logo__img {
-  height: 100px; /* Sesuaikan tinggi logo sesuai kebutuhan */
-  width: 100px; /* Lebar akan menyesuaikan dengan tinggi */
+  height: 100px;
+  width: 100px;
+  margin-left: 5rem;
 }
 
 .header__inner {
-  height: 145px;
+  width: 100%;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,6 +30,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: #4871a1;
 }
 
 h1 {
@@ -36,7 +39,9 @@ h1 {
   display: inline-block;
 }
 
-.menu__list {
+#header .menu a {
   float: right;
   margin-left: auto;
+  color: #fffacd;
+  margin-right: 50px;
 }
