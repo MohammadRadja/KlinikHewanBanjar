@@ -76,19 +76,18 @@ h1 {
   }
 
   .about-us {
-    padding-top: 20px;
+    padding: 20px 0;
   }
 
   .menu__list {
+    height: 250px;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    top: 100px;
+    top: 110px;
     position: absolute;
-    left: 0;
     background-color: #4871a1;
     font-weight: 900;
-    bottom: -25;
   }
 
   #header .menu a {
@@ -102,6 +101,20 @@ h1 {
 
   .products-items {
     width: 100%;
-    background-color: #fff;
+  }
+
+  /* Insight  */
+  .insights__content {
+    padding: 20px;
+  }
+
+  .insights__text {
+    margin-bottom: 5px;
+    border-bottom: none;
+  }
+  .insights__date {
+    font-size: 12px;
+    text-align: center;
+    margin: 2px auto;
   }
 }
