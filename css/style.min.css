@@ -3482,8 +3482,8 @@ template {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  width: 450px;
-  height: 200px;
+  width: 500px;
+  height: 400px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -3493,6 +3493,11 @@ template {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.products-item.product-item--list img {
+  width: 100%;
+  height: auto;
+}
+
 .products-item.product-item--list .products-item__name {
   font-size: 30px;
   margin-bottom: 15px;
@@ -4006,6 +4011,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 120px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -4031,6 +4037,7 @@ template {
   background-color: #fbfbfb;
   padding: 70px 50px;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 .contact-item i {
   background-color: #fff;
@@ -4151,7 +4158,7 @@ template {
 .goods__content {
   width: 100%;
   height: auto;
-  margin: 20px;
+  margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

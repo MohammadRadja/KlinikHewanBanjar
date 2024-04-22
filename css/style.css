@@ -96,6 +96,7 @@ h1 {
     position: absolute;
     background-color: #4871a1;
     font-weight: 900;
+    display: none;
   }
 
   #header .menu a {
