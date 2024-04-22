@@ -44,6 +44,14 @@ h1 {
   margin-left: auto;
   color: #fffacd;
   margin-right: 50px;
+  text-decoration: none;
+}
+
+.top-slider {
+  background-position: center;
+  background-size: cover;
+  filter: blur(0.8px);
+  -webkit-filter: blur(0.5px);
 }
 
 @media (max-width: 767px) {

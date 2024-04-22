@@ -3663,7 +3663,7 @@ template {
 }
 
 .insights__item img {
-  width: 350px;
+  width: 400px;
   height: 300px;
 }
 
@@ -4160,7 +4160,6 @@ template {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: center;
-  border: 1px solid;
 }
 .filter__item {
   margin-bottom: 40px;
