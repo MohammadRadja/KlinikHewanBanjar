@@ -76,6 +76,9 @@ h1 {
     border-radius: 25px;
     font-family: 500;
     margin-left: 80px;
+  }
+
+  .top-slider__btn::after {
     background-image: none;
   }
 
