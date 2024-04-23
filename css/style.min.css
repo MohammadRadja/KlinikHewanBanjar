@@ -3275,9 +3275,10 @@ template {
   cursor: pointer;
   position: relative;
   font-size: 15px;
+  border-radius: 25px;
   color: #fffacd;
   background-color: #4871a1;
-  padding: 24px 100px 20px 20px;
+  padding: 25px 45px 25px 10px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
